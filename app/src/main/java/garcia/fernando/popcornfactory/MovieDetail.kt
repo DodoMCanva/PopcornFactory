@@ -10,12 +10,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MovieDetail : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_detail)
         val lblImg : ImageView = findViewById(R.id.imagendetalle)
         val lblTitulo : TextView = findViewById(R.id.titulodetalle)
-        val lblDesc : TextView = findViewById(R.id.descripciondetalle)
+        val lblDesc : TextView = findViewById(R.id.descndetalle)
         var imagen : Int = intent.getIntExtra("image", R.drawable.popcorn)
         lblImg.setImageResource(imagen)
         var titulo : String = intent.getStringExtra("titulo").toString()
