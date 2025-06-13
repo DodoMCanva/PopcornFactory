@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:paddingHorizontal="25dp"
-        android:text="@string/welcome_text"
+        android:text="N/A"
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/babygray"
         android:textSize="14sp"
