@@ -51,6 +51,22 @@
         android:textColor="@color/babygray"
         android:textSize="14sp"
         />
+    
+    <Button
+        android:id="@+id/buyTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:text="Buy my Ticket!"
+        />
+    
+    <TextView
+        android:layout_width=""
+        android:layout_height=""
+        />
 
 
 </LinearLayout>
