@@ -1,5 +1,6 @@
 package garcia.fernando.popcornfactory
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioGroup
@@ -26,7 +27,14 @@ class SeatSelection : AppCompatActivity() {
         }
         val confirm : Button = findViewById(R.id.btnConfirmar)
         confirm.setOnClickListener{
-            Toast.makeText(this, "Enjoy the movie!", Toast.LENGTH_LONG).show()
+            var tickIntent : Intent = Intent(this, Ticket::class.java)
+            if (bundle != null) {
+                tickIntent.putExtra("pelicula", bundle.getString("name"))
+                tickIntent.putExtra("id",bundle.getInt("id").toString())
+                tickIntent.putExtra("sesion",bundle.getString("sesion"))
+                tickIntent.putExtra("precio",bundle.getString("precio"))
+                startActivity(tickIntent)
+            }
         }
         val row1 : RadioGroup = findViewById(R.id.row1)
         val row2 : RadioGroup = findViewById(R.id.row2)
